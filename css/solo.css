@@ -1,13 +1,15 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:700);
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 html {
-  font: 16px/1.5 Inconsolata, sans-serif;
+  font: 16px/1.5 Oswald, sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 30rem) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -32,7 +34,8 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
   margin: 0 0 0.5rem -0.1rem /* align left edge */;
   line-height: 1;
   color: #111;
@@ -47,7 +50,8 @@ h1 {
 @media (min-width: 30rem) {
   h1 {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    font-weight: 800;
+    margin: 2rem 0 0.5rem 0;
   }
 }
 
@@ -58,14 +62,14 @@ h1 a {
 h2 {
   margin-top: 2rem;
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 @media (min-width: 30rem) {
   h2 {
     margin-top: 2.5rem;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0 0.5rem 0;
   }
 }
 
@@ -148,6 +152,27 @@ pre > code {
 
 .container {
   max-width: 30rem;
-  margin: 0 auto;
+  margin: 20% 10% 0 auto;
   padding: 0 1rem;
+}
+
+h2.sub{
+  font-family: Oswald, sans-serif;
+  font-weight: 800;
+  line-height: 1.4em;
+  font-size: 1.3rem;
+}
+.address{
+
+}
+.internet{
+  display: block;
+}
+a.mailto{
+  color: #333;
+
+}
+a.mailto:hover{
+  text-decoration: none;
+  background-color: #a0f1b3;
 }
